@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ceres"
+version = "0.1.0"
+description = ""
+authors = ["Raman Siamionau <1590415904a@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ceres"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+web3 = "^6.5.0"
+pydantic = "^2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+
+[tool.poetry.group.prometheus.dependencies]
+prometheus-client = "^0.16.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
